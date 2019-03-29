@@ -1,0 +1,49 @@
+<odoo>
+	<data>
+ 		<record model="ir.ui.view" id="view_device_form">
+			<field name="name">device.form</field>
+			<field name="model">device</field>
+			<field name="arch" type="xml">
+				<form string="Device" class="device">
+					<header>
+						
+					</header>
+					<sheet>
+						<group>
+							<group>
+								<field name="name" string="Appareil"/>
+								<field name="serial_number" string="Numéro de série"/>
+							</group>
+							<group>
+								<field name="date_allocation" string="Date de prêt"/>
+								<field name="date_purchase" string="Date d'achat"/>
+								<field name="date_warranty_end" string="Date de fin de garantie"/>
+							</group>
+						</group>						
+					</sheet>
+				</form>
+			</field>
+		</record>	
+		<record model="ir.ui.view" id="view_device_tree">
+			<field name="name">device.tree</field>
+			<field name="model">device</field>
+			<field name="arch" type="xml">
+				<tree string="Device">
+					<field name="name" string="Appareil"/>
+					<field name="serial_number" string="Numéro de série"/>
+					<field name="date_allocation" string="Date de prêt"/>
+					<field name="date_purchase" string="Date d'achat"/>
+					<field name="date_warranty_end" string="Date de fin de garantie"/>
+				</tree>
+			</field>
+		</record>	
+		<record model="ir.actions.act_window" id="device_action_window">
+			<field name="name">Appareils</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">device</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form, tree</field>
+			<field name="context"></field>
+    	</record>
+	</data>
+</odoo>

@@ -1,0 +1,43 @@
+<odoo>
+	<data>
+ 		<record model="ir.ui.view" id="view_type_form">
+			<field name="name">type.form</field>
+			<field name="model">type</field>
+			<field name="arch" type="xml">
+				<form string="Type" class="type">
+					<header>
+						
+					</header>
+					<sheet>
+						<group>
+							<group>
+								<field name="name" string="Type"/>
+							</group>
+							<group>
+								<field name="models_ids" string="ID modèle"/>
+							</group>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="view_type_tree">
+			<field name="name">type.tree</field>
+			<field name="model">type</field>
+			<field name="arch" type="xml">
+				<tree string="Type">
+					<field name="name" string="Type"/>
+					<field name="models_ids" string="ID modèle"/>
+				</tree>
+			</field>
+		</record>
+		<record model="ir.actions.act_window" id="type_action_window">
+			<field name="name">Types</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">type</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form, tree</field>
+			<field name="context"></field>
+    	</record>
+	</data>
+</odoo>

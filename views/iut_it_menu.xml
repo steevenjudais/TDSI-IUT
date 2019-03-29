@@ -1,0 +1,25 @@
+<odoo>
+	<data>
+	
+		<!-- Top menu item -->
+    	<menuitem name="TDSI-IUT" id="menu_root"/>
+    	
+    	<!-- menu categories -->
+    	<menuitem name="Appareils" id="device_menu_1" parent="menu_root"/>
+    	<menuitem name="Types" id="type_menu_1" parent="menu_root"/>
+    	<menuitem name="Modèles" id="models_menu_1" parent="menu_root"/>
+    	<menuitem name="Marques" id="brand_menu_1" parent="menu_root"/>
+    	<menuitem name="Partenaires" id="partner_menu_1" parent="menu_root"/>
+    	
+    	<!-- actions -->
+    	<menuitem name="Liste" id="device_menu_1_list" parent="device_menu_1" action="device_action_window"/>
+    	
+    	<menuitem name="Liste" id="type_menu_1_list" parent="type_menu_1" action="type_action_window"/>
+    	
+    	<menuitem name="Liste" id="models_menu_1_list" parent="models_menu_1" action="models_action_window"/>
+
+    	<menuitem name="Liste" id="brand_menu_1_list" parent="brand_menu_1" action="brand_action_window"/>
+    	
+    	<menuitem name="Liste" id="partner_menu_1_list" parent="partner_menu_1" action="partner_action_window"/>
+	</data>
+</odoo>

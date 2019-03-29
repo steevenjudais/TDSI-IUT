@@ -1,0 +1,45 @@
+<odoo>
+	<data>
+ 		<record model="ir.ui.view" id="view_brand_form">
+			<field name="name">brand.form</field>
+			<field name="model">brand</field>
+			<field name="arch" type="xml">
+				<form string="Brand" class="brand">
+					<header>
+						
+					</header>
+					<sheet>
+						<group>
+							<group>
+								<field name="name" string="Marque"/>
+								<field name="warranty_delay_month" string="Délai de garantie"/>
+							</group>
+							<group>
+								<field name="support_phone" string="N° tél d'assistance"/>
+							</group>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="view_brand_tree">
+			<field name="name">brand.tree</field>
+			<field name="model">brand</field>
+			<field name="arch" type="xml">
+				<tree string="Brand">
+					<field name="name" string="Marque"/>
+					<field name="warranty_delay_month" string="Délai de garantie"/>
+					<field name="support_phone" string="N° tél d'assistance"/>
+				</tree>
+			</field>
+		</record>
+		<record model="ir.actions.act_window" id="brand_action_window">
+			<field name="name">Marques</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">brand</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form, tree</field>
+			<field name="context"></field>
+    	</record>
+	</data>
+</odoo>

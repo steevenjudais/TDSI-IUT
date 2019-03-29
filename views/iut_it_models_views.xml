@@ -1,0 +1,46 @@
+<odoo>
+	<data>
+ 		<record model="ir.ui.view" id="view_models_form">
+			<field name="name">models.form</field>
+			<field name="model">models</field>
+			<field name="arch" type="xml">
+				<form string="Models" class="models">
+					<header>
+						
+					</header>
+					<sheet>
+						<group>
+							<group>
+								<field name="name" string="Modèle"/>
+								<field name="ref" string="Référence"/>
+								<field name="type_ids" string="Type"/>
+							</group>
+							<group>
+								
+							</group>											
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="view_models_tree">
+			<field name="name">models.tree</field>
+			<field name="model">models</field>
+			<field name="arch" type="xml">
+				<tree string="Models">
+					<field name="name" string="Modèle"/>
+					<field name="ref" string="Référence"/>
+					<field name="type_ids" string="Type"/>
+				</tree>
+			</field>
+		</record>
+		<record model="ir.actions.act_window" id="models_action_window">
+			<field name="name">Modèles</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">models</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form, tree</field>
+			<field name="context"></field>
+    	</record>
+	</data>
+</odoo>

@@ -1,13 +1,12 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "tdsimodel",
+    'name': "TDSI-IUT",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Module de gestion de parc""",
 
     'description': """
-        Long description of module's purpose
+        Gestion des devices d'une entreprise
     """,
 
     'author': "teamDSI",
@@ -25,6 +24,12 @@
     # always loaded
     'data': [
         'security/ir.model.access.csv',
+        'views/iut_it_brand_views.xml',
+        'views/iut_it_device_views.xml',
+        'views/iut_it_models_views.xml',
+        'views/iut_it_partner_views.xml',
+        'views/iut_it_type_views.xml',
+        'views/iut_it_menu.xml',
         'views/views.xml',
         'views/templates.xml',
     ],

@@ -1,0 +1,45 @@
+<odoo>
+	<data>
+ 		<record model="ir.ui.view" id="view_partner_form">
+			<field name="name">partner.form</field>
+			<field name="model">partner</field>
+			<field name="arch" type="xml">
+				<form string="Partner" class="partner">
+					<header>
+						
+					</header>
+					<sheet>
+						<group>
+							<group>
+								<field name="name" string="Partenaire"/>
+								<field name="employee_ref" string="Référence employé"/>
+							</group>
+							<group>
+								<field name="device_ids" string="ID appareil"/>
+							</group>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="view_partner_tree">
+			<field name="name">partner.tree</field>
+			<field name="model">partner</field>
+			<field name="arch" type="xml">
+				<tree string="Partner">
+					<field name="name" string="Partenaire"/>
+					<field name="employee_ref" string="Référence employé"/>
+					<field name="device_ids" string="ID appareil"/>
+				</tree>
+			</field>
+		</record>
+		<record model="ir.actions.act_window" id="partner_action_window">
+			<field name="name">Partenaires</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">partner</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">form, tree</field>
+			<field name="context"></field>
+    	</record>
+	</data>
+</odoo>
