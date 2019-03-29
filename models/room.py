@@ -5,9 +5,9 @@ from stdnum.mx.rfc import _name_blacklist
 
 class room(models.Model):
     _name = 'room'
+    _sql_constraints = [
+        ('name_uniq', 'unique (name)', 'Le nom existe déjà')
+    ]
     
     name = fields.Char('name', required = True)
-    date_allocation = fields.Char('date_allocation')
-    serial_number = fields.Char('serial_number', required = True)
-    date_purchase = fields.Date('date_purchase')
-    date_warranty_end = fields.Date('date_warranty_end')
+    floor = fields.Char('floor')

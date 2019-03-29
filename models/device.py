@@ -11,3 +11,4 @@ class device(models.Model):
     serial_number = fields.Char('serial_number', required = True)
     date_purchase = fields.Date('date_purchase')
     date_warranty_end = fields.Date('date_warranty_end')
+    partner_id = fields.Many2one('res.partner', string="partenaire")
