@@ -24,5 +24,7 @@ class models(models.Model):
     name = fields.Char('name', required = True)
     ref = fields.Char('ref')
     type_ids = fields.Many2many('type', string = "Type")
+    brand_id = fields.Many2one('brand', string= "marque")
+    device_ids = fields.One2many('device', 'model_id', string = "appareil")
     
     

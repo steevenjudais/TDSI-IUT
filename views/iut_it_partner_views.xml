@@ -9,7 +9,7 @@
 					<field name="employee_ref" string="Référence employé"/>
 				</field>
 				<xpath expr="//field[@name='lang']/parent::group/parent::group" postion="after">
-					<field name="device_ids" string="ID appareil"/>
+					<field name="device_ids" string="Appareil"/>
 				</xpath>
 			</field>
 		</record>
@@ -20,7 +20,7 @@
 			<field name="arch" type="xml">
 				<field name="display_name" position="before">
 					<field name="employee_ref" string="Référence employé"/>
-					<field name="device_ids" string="ID appareil"/>
+					<field name="device_ids" string="Appareil"/>
 				</field>
 			</field>
 		</record>

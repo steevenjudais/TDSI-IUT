@@ -6,7 +6,7 @@
 			<field name="arch" type="xml">
 				<form string="Device" class="device">
 					<header>
-						
+						<button name='coche' type="object" string="Bouton"/>
 					</header>
 					<sheet>
 						<group>
@@ -18,7 +18,9 @@
 								<field name="date_allocation" string="Date de prêt"/>
 								<field name="date_purchase" string="Date d'achat"/>
 								<field name="date_warranty_end" string="Date de fin de garantie"/>
-								<field name="partner_id" string="ID partenaire"/>
+								<field name="partner_id" string="Nom partenaire"/>
+								<field name="model_id" string="Modèle"/>
+								<field name="availaible" string="Disponible"/>
 							</group>
 						</group>						
 					</sheet>
@@ -35,6 +37,9 @@
 					<field name="date_allocation" string="Date de prêt"/>
 					<field name="date_purchase" string="Date d'achat"/>
 					<field name="date_warranty_end" string="Date de fin de garantie"/>
+					<field name="partner_id" string="Nom partenaire"/>
+					<field name="model_id" string="Modèle"/>
+					<field name="availaible" string="Disponible"/>
 				</tree>
 			</field>
 		</record>
