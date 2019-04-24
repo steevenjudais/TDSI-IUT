@@ -6,6 +6,7 @@
 			<field name="model">res.partner</field>
 			<field name="arch" type="xml">
 				<field name="lang" position="after">
+					<button name='effaceAppareils' type="object" string="Bouton"/>
 					<field name="employee_ref" string="Référence employé"/>
 				</field>
 				<xpath expr="//field[@name='lang']/parent::group/parent::group" postion="after">

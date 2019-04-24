@@ -21,5 +21,6 @@
     	<menuitem name="Liste" id="brand_menu_1_list" parent="brand_menu_1" action="brand_action_window"/>
     	
     	<menuitem name="Liste" id="partner_menu_1_list" parent="partner_menu_1" action="partner_action_window"/>
+    	
 	</data>
 </odoo>

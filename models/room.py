@@ -11,3 +11,4 @@ class room(models.Model):
     
     name = fields.Char('name', required = True)
     floor = fields.Char('floor')
+    #partner_ids = fields.One2many('res.partner', 'room_id', string = "partenaire")
